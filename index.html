@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Slowest Eater!!</title>
+    <!--
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    -->
+    <meta property="description" content="Who is the slowest eater?" />
+    <meta property="og:title" content="Slowest Eater!" />
+    <meta property="og:description" content="Your daily dose of Slow Eating" />
+    <!--
+        <meta property="og:image" content="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/pile-of-poo_1f4a9.png" />
+        -->
+    <meta property="og:site_name" content="Slowest Eater" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+    <style type="text/css">
+      #hero {
+        background-image: url("bg/bg-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        border: 1px solid #adcbe3;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var backgrounds = ["bg/bg-1.jpg"]; /*, "bg/bg-2.jpg", "bg/bg-3.jpg", "bg/bg-4.jpg", "bg/bg-5.jpg", "bg/bg-6.jpg"];*/
+      var selected_bg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+      $(document).ready(function() {
+          $("#hero").css("background-image", `url(${selected_bg})`);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="hero"></div>
+  </body>
+</html>
