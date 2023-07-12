@@ -29,6 +29,13 @@ h2{
   position: relative;
 }
 
+#hero marquee {
+  position: bottom;
+  font-size: 8em;
+  color: white;
+  marquee-speed: fast;
+}
+
 #animate{
   margin: 0 auto;
   width: 20px;
